@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B033CAC28D06FA700011A4E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B033CAB28D06FA700011A4E /* Constants.swift */; };
 		2BC2D8F328CF3A6F00CAB302 /* SSSwiftUIAnimationsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC2D8F228CF3A6F00CAB302 /* SSSwiftUIAnimationsApp.swift */; };
 		2BC2D8F528CF3A6F00CAB302 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC2D8F428CF3A6F00CAB302 /* ContentView.swift */; };
 		2BC2D8F728CF3A7000CAB302 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BC2D8F628CF3A7000CAB302 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B033CAB28D06FA700011A4E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2BC2D8EF28CF3A6F00CAB302 /* SSSwiftUIAnimations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSSwiftUIAnimations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BC2D8F228CF3A6F00CAB302 /* SSSwiftUIAnimationsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSSwiftUIAnimationsApp.swift; sourceTree = "<group>"; };
 		2BC2D8F428CF3A6F00CAB302 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 			children = (
 				2BC2D90028CF3C4500CAB302 /* FeedbackView.swift */,
 				2BC2D90128CF3C4500CAB302 /* SentView.swift */,
+				2B033CAB28D06FA700011A4E /* Constants.swift */,
 			);
 			path = SendButton;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B033CAC28D06FA700011A4E /* Constants.swift in Sources */,
 				2BC2D8F528CF3A6F00CAB302 /* ContentView.swift in Sources */,
 				2BC2D8F328CF3A6F00CAB302 /* SSSwiftUIAnimationsApp.swift in Sources */,
 				2BC2D90328CF3C4500CAB302 /* SentView.swift in Sources */,

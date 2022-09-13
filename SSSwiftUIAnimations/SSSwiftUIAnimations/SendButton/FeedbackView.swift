@@ -18,11 +18,11 @@ enum SendState {
         case .origin, .ready:
             return 0
         case .leading:
-            return -(UIScreen.main.bounds.width/2 - 180)
+            return -(Constants.screenWidth/2 - Constants.leadingSpace)
         case .moveToEnd:
-            return UIScreen.main.bounds.width
+            return Constants.screenWidth
         default:
-            return UIScreen.main.bounds.width
+            return Constants.screenWidth
             
         }
     }
@@ -54,15 +54,12 @@ enum SendState {
     }
 }
 struct FeedbackView: View {
-    @State var isAnimating: Bool = false
     @State var sent: Bool = false
-    @State var success: Bool = false
     @State var sendAnimation: SendState
-    @State var offsetX: CGFloat = -(UIScreen.main.bounds.width - 24)
-    @State var radius: CGFloat = 45
+    @State var offsetX: CGFloat = -(Constants.screenWidth - Constants.buttonPadding)
+    @State var radius: CGFloat = Constants.animationRadius
     var body: some View {
         VStack {
-            
             ZStack(alignment: .center) {
                 Color.cyan
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -70,11 +67,10 @@ struct FeedbackView: View {
                 VStack {
                     ZStack {
                         RoundedCornersShape(corners: [.topRight, .bottomRight], radius: self.radius, animation: self.sendAnimation)
-                            .fill(Color(UIColor.green))
+                            .fill(Color.green)
                             .offset(x: offsetX, y: 0)
                             .animation(.linear(duration: 0.5), value: offsetX)
                         // .animation(.easeInOut(duration: 10), value: radius)
-                        
                     }
                 }
                 
@@ -101,15 +97,15 @@ struct FeedbackView: View {
             }
         }
         
-        .frame(height: 72)
-        .cornerRadius(12)
+        .frame(height: Constants.buttonHeight)
+        .cornerRadius(Constants.cornerRadius)
         .padding()
-        .padding([.leading, .trailing], 24)
-        .shadow(radius: 10)
+        .padding([.leading, .trailing], Constants.buttonPadding)
+        .shadow(radius: Constants.shadowRadius)
         .onTapGesture {
-            
             Timer.scheduledTimer(withTimeInterval: 0.2, repeats: false) { (Timer) in
-                self.offsetX = -(UIScreen.main.bounds.width - 24) + 120
+                self.radius = Constants.animationRadius
+                self.offsetX = -(Constants.screenWidth - Constants.buttonPadding) + 120
                 self.sent.toggle()
                 self.sendAnimation = .leading
                 
@@ -117,18 +113,15 @@ struct FeedbackView: View {
             Timer.scheduledTimer(withTimeInterval: 1.5, repeats: false) { (Timer) in
                 self.offsetX = 0
                 self.sendAnimation = .moveToEnd
-                self.radius = 12
+                self.radius = Constants.cornerRadius
             }
             Timer.scheduledTimer(withTimeInterval: 2.0, repeats: false) { (Timer) in
                 self.sendAnimation = .end
-                self.success.toggle()
             }
             Timer.scheduledTimer(withTimeInterval: 3.5, repeats: false) { (Timer) in
-                self.offsetX = -(UIScreen.main.bounds.width - 24)
+                self.offsetX = -(Constants.screenWidth - Constants.buttonPadding)
                 self.sent.toggle()
-                self.success.toggle()
                 self.sendAnimation = .origin
-                self.radius = 45
             }
         }
     }
@@ -148,22 +141,17 @@ struct RoundedCornersShape: Shape {
         get { return radius }
         set { radius = newValue }
     }
-    
+        
     private func arrowShapePath() -> UIBezierPath {
-        let size = CGSize(width: UIScreen.main.bounds.width - 48, height: 72)
-        let leadingEdgeWidth = size.width * CGFloat(20) / 100
+        let size = CGSize(width: Constants.screenWidth - Constants.buttonPadding - Constants.buttonPadding, height: Constants.buttonHeight)
         let trailingEdgeWidth = size.width * (1 - CGFloat(20) / 100)
         let path = UIBezierPath()
         path.move(to: CGPoint(x: 0, y: 0))
-        
-        //  path.addLine(to: CGPoint(x: leadingEdgeWidth, y: size.height/2))
-        //  path.addCurve(to: CGPoint(x: 0, y: size.height), controlPoint1: CGPoint(x: 0, y: size.height/3), controlPoint2: CGPoint(x: 0, y: size.height/2))
         path.addLine(to: CGPoint(x: 0, y: size.height))
         path.addLine(to: CGPoint(x: trailingEdgeWidth, y: size.height + 20))
         path.addLine(to: CGPoint(x: size.width, y: size.height/2))
         path.addLine(to: CGPoint(x: trailingEdgeWidth, y: -20))
         path.close()
-        
         return path
     }
     
