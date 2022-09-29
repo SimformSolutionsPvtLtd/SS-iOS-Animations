@@ -11,6 +11,10 @@
 		2BC2D8F528CF3A6F00CAB302 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC2D8F428CF3A6F00CAB302 /* ContentView.swift */; };
 		2BC2D8F728CF3A7000CAB302 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BC2D8F628CF3A7000CAB302 /* Assets.xcassets */; };
 		2BC2D8FA28CF3A7000CAB302 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BC2D8F928CF3A7000CAB302 /* Preview Assets.xcassets */; };
+		E43F916228E5762400E724B7 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43F916128E5762400E724B7 /* CircleView.swift */; };
+		E43F916628E57E5B00E724B7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43F916528E57E5B00E724B7 /* Constants.swift */; };
+		E43F916828E57E8E00E724B7 /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43F916728E57E8E00E724B7 /* LineView.swift */; };
+		E43F916C28E57EE400E724B7 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43F916B28E57EE400E724B7 /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		2BC2D8F428CF3A6F00CAB302 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2BC2D8F628CF3A7000CAB302 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BC2D8F928CF3A7000CAB302 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E43F916128E5762400E724B7 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		E43F916528E57E5B00E724B7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E43F916728E57E8E00E724B7 /* LineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
+		E43F916B28E57EE400E724B7 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,7 @@
 			children = (
 				2BC2D8F228CF3A6F00CAB302 /* SSSwiftUIAnimationsApp.swift */,
 				2BC2D8F428CF3A6F00CAB302 /* ContentView.swift */,
+				E43F916328E57E3000E724B7 /* CircleButton */,
 				2BC2D8F628CF3A7000CAB302 /* Assets.xcassets */,
 				2BC2D8F828CF3A7000CAB302 /* Preview Content */,
 			);
@@ -65,6 +74,33 @@
 				2BC2D8F928CF3A7000CAB302 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E43F916328E57E3000E724B7 /* CircleButton */ = {
+			isa = PBXGroup;
+			children = (
+				E43F916428E57E3A00E724B7 /* Support */,
+				E43F916128E5762400E724B7 /* CircleView.swift */,
+			);
+			path = CircleButton;
+			sourceTree = "<group>";
+		};
+		E43F916428E57E3A00E724B7 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				E43F916928E57EC700E724B7 /* Extensions */,
+				E43F916528E57E5B00E724B7 /* Constants.swift */,
+				E43F916728E57E8E00E724B7 /* LineView.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		E43F916928E57EC700E724B7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E43F916B28E57EE400E724B7 /* Color.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E43F916228E5762400E724B7 /* CircleView.swift in Sources */,
 				2BC2D8F528CF3A6F00CAB302 /* ContentView.swift in Sources */,
 				2BC2D8F328CF3A6F00CAB302 /* SSSwiftUIAnimationsApp.swift in Sources */,
+				E43F916828E57E8E00E724B7 /* LineView.swift in Sources */,
+				E43F916628E57E5B00E724B7 /* Constants.swift in Sources */,
+				E43F916C28E57EE400E724B7 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
