@@ -11,6 +11,9 @@ struct ContentView: View {
     var body: some View {
         Text("Hello, world!")
             .padding()
+        NavigationLink(destination: ProgressView()) {
+            Text("Progress View")
+        }
     }
 }
 
