@@ -8,9 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+
+    @State var isActive = false
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            VStack {
+                Text("Hello, world!")
+                    .padding()
+                NavigationLink(destination: ArrowView()) {
+                    Text("Login")
+                }
+            }
+        }
     }
 }
 
