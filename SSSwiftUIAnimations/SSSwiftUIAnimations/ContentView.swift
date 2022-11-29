@@ -9,8 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        sendButtonView(path: arrowPath, start: p1, animationState: .origin)
     }
 }
 
