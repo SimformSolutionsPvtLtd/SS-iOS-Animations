@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2261EE412B4BEF5B0033C953 /* CircularStickLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2261EE402B4BEF5B0033C953 /* CircularStickLoader.swift */; };
 		2298DC7C2B46795B00AF12EB /* LinearStickLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2298DC7B2B46795B00AF12EB /* LinearStickLoader.swift */; };
 		2BC2D8F328CF3A6F00CAB302 /* SSSwiftUIAnimationsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC2D8F228CF3A6F00CAB302 /* SSSwiftUIAnimationsApp.swift */; };
 		2BC2D8F528CF3A6F00CAB302 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC2D8F428CF3A6F00CAB302 /* ContentView.swift */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2261EE402B4BEF5B0033C953 /* CircularStickLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularStickLoader.swift; sourceTree = "<group>"; };
 		2298DC7B2B46795B00AF12EB /* LinearStickLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearStickLoader.swift; sourceTree = "<group>"; };
 		2BC2D8EF28CF3A6F00CAB302 /* SSSwiftUIAnimations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSSwiftUIAnimations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BC2D8F228CF3A6F00CAB302 /* SSSwiftUIAnimationsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSSwiftUIAnimationsApp.swift; sourceTree = "<group>"; };
@@ -38,6 +40,7 @@
 			isa = PBXGroup;
 			children = (
 				2298DC7B2B46795B00AF12EB /* LinearStickLoader.swift */,
+				2261EE402B4BEF5B0033C953 /* CircularStickLoader.swift */,
 			);
 			path = SStickProgressBar;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			files = (
 				2BC2D8F528CF3A6F00CAB302 /* ContentView.swift in Sources */,
 				2BC2D8F328CF3A6F00CAB302 /* SSSwiftUIAnimationsApp.swift in Sources */,
+				2261EE412B4BEF5B0033C953 /* CircularStickLoader.swift in Sources */,
 				2298DC7C2B46795B00AF12EB /* LinearStickLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
