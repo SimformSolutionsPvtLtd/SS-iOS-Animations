@@ -8,9 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
+    private var exampleList = ExampleListModel.exampleList
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            ZStack {
+                List{
+                    ForEach(exampleList) {item in
+                        ExampleListRow(exampleListItem: item)
+                    }
+                }.listStyle(.insetGrouped)
+                    .listRowSpacing(10)
+                    .listRowSeparator(.hidden)
+                    .navigationBarTitleDisplayMode(.inline)
+                    .toolbar {
+                        ToolbarItem(placement: .principal) {
+                            Text("Examples").font(Font.system(size: 30, weight: .bold)).foregroundStyle(Color.indigo)
+                        }
+                    }
+            }
+        }
     }
 }
 

@@ -116,7 +116,7 @@ struct SSProgressView: View {
     
     private func progressAnimation() {
         // Showing percentage text once initial animation is done
-        initialTimer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false) { timer in
+        initialTimer = Timer.scheduledTimer(withTimeInterval: 0.6, repeats: false) { timer in
             withAnimation(Animation.linear(duration: 0.2)) {
                 showPercent = true
                 startDotAnim = true

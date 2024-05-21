@@ -37,3 +37,7 @@ struct ExampleProgressView: View {
         }
     }
 }
+
+#Preview {
+    ExampleProgressView()
+}
