@@ -15,11 +15,15 @@ struct DownArrow: Shape {
     var progress: Float
     var circleSize: CGFloat
     var isAnimating: Bool
+    var bounceEffect: CGFloat
     
-    // MARK: - Animatable Data
-    var animatableData: CGFloat {
-        get { initialAnim }
-        set { initialAnim = newValue }
+    var animatableData: AnimatablePair<CGFloat, CGFloat> {
+        get { AnimatablePair(initialAnim, bounceEffect)}
+        
+        set {
+            self.initialAnim = newValue.first
+            self.bounceEffect = newValue.second
+        }
     }
     
     func path(in rect: CGRect) -> Path {
@@ -30,10 +34,10 @@ struct DownArrow: Shape {
         var controlY: CGFloat
         
         if isDownward {
-            controlY = centerY + (initialAnim * (rect.height / 2))
+            controlY = centerY + (initialAnim * (rect.height / 2)) * (bounceEffect)
         } else {
             let bounceProgress = bounce(initialAnim)
-            controlY = centerY - (bounceProgress * (rect.height / 4))
+            controlY = centerY - (bounceProgress * (rect.height / 4)) - (bounceEffect * 6)
         }
         
         let controlX = rect.midX
@@ -62,8 +66,9 @@ struct DownArrow: Shape {
     
     // Function to apply bounce effect
     private func bounce(_ progress: CGFloat) -> CGFloat {
-        let numberOfBounces = 2
+        let numberOfBounces = 1
         let bounces = CGFloat(numberOfBounces)
         return abs((circleSize * 0.01 - progress) * sin(progress * .pi * bounces))
     }
 }
+

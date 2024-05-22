@@ -13,6 +13,7 @@ struct Arrow: View {
     var arrowStyle: ArrowViewParams
     var style: SSProgressViewStyle
     @Binding var progress: Float
+    @Binding var bounceEffect: CGFloat
     
     var body: some View {
         VStack(spacing: 0) {
@@ -25,7 +26,7 @@ struct Arrow: View {
                 )
                 .opacity(arrowStyle.showVerticalLine ? 1 : 0)
                 .foregroundColor(style.arrowColor)
-                .offset(y: arrowStyle.isAnimating ? (!arrowStyle.animationStarted ? -5 : -(style.circleSize/2)) : 0)
+                .offset(y: arrowStyle.isAnimating ? (!arrowStyle.animationStarted ? -10 : -(style.circleSize/2)) : 0)
                 .animation(Animation.linear.speed(!arrowStyle.animationStarted ? 100 : .zero), value: 0)
             
             if progress < 0.1 {
@@ -36,7 +37,7 @@ struct Arrow: View {
                     isDownward: arrowStyle.isDownward,
                     progress: Float(progress),
                     circleSize: style.circleSize,
-                    isAnimating: arrowStyle.isAnimating
+                    isAnimating: arrowStyle.isAnimating, bounceEffect: bounceEffect
                 )
                 .stroke(style: StrokeStyle(lineWidth: style.arrowStrokeWidth, lineCap: .round))
                 .frame(width: 10, height: 50)

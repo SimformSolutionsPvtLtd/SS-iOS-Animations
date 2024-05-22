@@ -55,6 +55,8 @@ struct SSProgressView: View {
     // Call back for restarting animation in between
     var onCancelProgress: (() -> Void)?
     
+    @State var bounceEffect: CGFloat = 1.0
+    
     var body: some View {
         ZStack {
             // Progress Circle with animation
@@ -68,7 +70,7 @@ struct SSProgressView: View {
             let arrowStyle = ArrowViewParams(isAnimating: isAnimating, progress: Double(progress), initialAnim: initialAnim, isDownward: isDownArrow, animationStarted: startDotAnim, showVerticalLine: showVerticalLine)
             
             // Arrow view
-            Arrow(arrowStyle: arrowStyle, style: style, progress: $progress)
+            Arrow(arrowStyle: arrowStyle, style: style, progress: $progress, bounceEffect: $bounceEffect)
         }.allowsHitTesting(canTap)
             .onTapGesture {
                 if style.allowCancelProgress && !isReset {
@@ -100,6 +102,12 @@ struct SSProgressView: View {
             if !isAnimating {
                 isAnimating.toggle()
                 progressAnimation()
+            }
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            withAnimation(.linear(duration: 0.7)) {
+                bounceEffect = 2
             }
         }
         
@@ -189,6 +197,7 @@ struct SSProgressView: View {
         isAnimating = false
         initialAnim = 1.0
         isDownArrow = true
+        bounceEffect = 1.0
         startDotAnim = false
         showVerticalLine = true
         showPercent = false

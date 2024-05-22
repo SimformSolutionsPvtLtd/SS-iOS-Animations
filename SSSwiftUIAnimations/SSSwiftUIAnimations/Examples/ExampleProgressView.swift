@@ -20,7 +20,6 @@ struct ExampleProgressView: View {
                 }, onProgressCompletion: {
                     timer?.invalidate()
                 }, onCancelProgress: {
-                    progress = 0.0
                     timer?.invalidate()
                 })
         }.navigationBarTitle("ProgressView Example", displayMode: .inline)
