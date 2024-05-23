@@ -33,7 +33,7 @@ struct CheckView: View {
                     x: isAnimating ? 0.3 : x,
                     y: isAnimating ? 4.5 : y),
                     height: size,
-                    stright: straight)
+                    straight: straight)
                 .stroke(style: StrokeStyle(lineWidth: isAnimating ? arrowStrokeWidth / (size * 0.01) : arrowStrokeWidth, lineCap: .round))
                 .frame(width: width * 0.57, height: 105)
                 .offset(CGSize(width: 0, height: isAnimating ? offset : 0))
@@ -68,7 +68,7 @@ struct Check: Shape {
     // MARK: - Variables
     var endPoint: CGPoint
     var height: CGFloat
-    var stright: CGFloat
+    var straight: CGFloat
     
     // MARK: - Animatable data
     var animatableData: AnimatablePair<CGFloat, CGFloat> {
@@ -91,7 +91,7 @@ struct Check: Shape {
         )
         let start2 = CGPoint(
             x: rect.maxX/rightLine,
-            y: rect.midY - 21 * endPoint.x - stright
+            y: rect.midY - 21 * endPoint.x - straight
         )
         var path = Path()
         path.move(to: start)

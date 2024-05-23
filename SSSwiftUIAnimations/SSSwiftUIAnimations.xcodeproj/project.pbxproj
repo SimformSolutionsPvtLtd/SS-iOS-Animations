@@ -21,6 +21,7 @@
 		B19E0B662BF7498700E65974 /* ExampleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19E0B652BF7498700E65974 /* ExampleProgressView.swift */; };
 		B1DFCA512BF4FA3D00F01505 /* ProgressCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DFCA502BF4FA3D00F01505 /* ProgressCircle.swift */; };
 		B1DFCA532BF4FC7900F01505 /* ArrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DFCA522BF4FC7900F01505 /* ArrowView.swift */; };
+		B1FE861E2BFF6BC000FB111C /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FE861D2BFF6BC000FB111C /* ViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		B19E0B652BF7498700E65974 /* ExampleProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleProgressView.swift; sourceTree = "<group>"; };
 		B1DFCA502BF4FA3D00F01505 /* ProgressCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCircle.swift; sourceTree = "<group>"; };
 		B1DFCA522BF4FC7900F01505 /* ArrowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowView.swift; sourceTree = "<group>"; };
+		B1FE861D2BFF6BC000FB111C /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				B1098E7C2BD94ED900BC19DD /* WaveView.swift */,
 				B11B98392BCE9C3F00D76016 /* CheckView.swift */,
 				B177713E2BF39A60001723EC /* ModelClass.swift */,
+				B1FE861D2BFF6BC000FB111C /* ViewExtension.swift */,
 			);
 			path = ProgressAnimation;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 				B11B983A2BCE9C3F00D76016 /* CheckView.swift in Sources */,
 				B1DFCA512BF4FA3D00F01505 /* ProgressCircle.swift in Sources */,
 				B14AB36C2BC41B05004B09C4 /* ProgressView.swift in Sources */,
+				B1FE861E2BFF6BC000FB111C /* ViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

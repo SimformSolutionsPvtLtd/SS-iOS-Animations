@@ -36,10 +36,10 @@ struct SSProgressViewStyle {
         self.circleSize =  max(circleSize, 100)
         
         // Circle stroke width
-        self.circleStrokeWidth = circleStrokeWidth
+        self.circleStrokeWidth = max(circleStrokeWidth, 1)
         
         // Arrow stroke width
-        self.arrowStrokeWidth = arrowStrokeWidth
+        self.arrowStrokeWidth = max(arrowStrokeWidth, 1)
         
         // Progress text font size
         self.fontSize = fontSize

@@ -19,8 +19,8 @@ struct WaveView: View {
     
     var body: some View {
         VStack(spacing: 0) {
-            let progresss = 1.0 / CGFloat(5)
-            let normedAmplitude = (1.5 * progresss - 0.8) * self.amplitude
+            let waveProgress = 1.0 / CGFloat(5)
+            let normedAmplitude = (1.5 * waveProgress - 0.8) * self.amplitude
             
             Wave(
                 phase: phase,
@@ -31,19 +31,19 @@ struct WaveView: View {
             .frame(width: width * 0.44, height: height)
             .onAppear {
                 Timer.scheduledTimer(withTimeInterval: 0.3, repeats: true) { timer in
-                    if progress > 0.1 && progress < 0.90 {
+                    if progress >= 0.001 && progress < 0.92 {
                         // Wave animation
                         withAnimation( Animation.linear(duration: 2).repeatForever(autoreverses: false)) {
                             self.amplitude = 0.8
                             self.phase -= 6.0
                         }
-                    } else if progress >= 0.90 && progress <= 0.95 {
+                    } else if progress >= 0.92 && progress < 0.99 {
                         // Slowly transforming wave to straight line
                         withAnimation(Animation.linear(duration: 2)) {
                             self.amplitude = 0
                             self.phase -= 0.3
                         }
-                    } else if progress > 0.95 {
+                    } else if progress >= 0.99 {
                         timer.invalidate()
                     }
                 }

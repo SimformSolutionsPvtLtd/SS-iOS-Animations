@@ -26,9 +26,6 @@ struct SSProgressView: View {
     // Start/stop dot animation
     @State private var startDotAnim = false
     
-    // Hide show vertical arrow
-    @State private var showVerticalLine = true
-    
     // Stating shape is down arrow or not
     @State private var isDownArrow = true
     
@@ -61,30 +58,22 @@ struct SSProgressView: View {
         ZStack {
             // Progress Circle with animation
             ProgressCircle(progress: $progress, style: style)
-                .animation(.linear, value: progress)
+                .if(progress > 0.0) {
+                $0.animation(.linear, value: progress)
+            }
             
             // Progress percentage text view
             ProgressText(showPercent: showPercent, progress: $progress, style: style)
             
             // Arrow view parameters
-            let arrowStyle = ArrowViewParams(isAnimating: isAnimating, progress: Double(progress), initialAnim: initialAnim, isDownward: isDownArrow, animationStarted: startDotAnim, showVerticalLine: showVerticalLine)
+            let arrowStyle = ArrowViewParams(isAnimating: isAnimating, progress: Double(progress), initialAnim: initialAnim, isDownward: isDownArrow, animationStarted: startDotAnim)
             
             // Arrow view
             Arrow(arrowStyle: arrowStyle, style: style, progress: $progress, bounceEffect: $bounceEffect)
         }.allowsHitTesting(canTap)
             .onTapGesture {
-                if style.allowCancelProgress && !isReset {
-                    isStarted.toggle()
-                    if isStarted {
-                        // Cancel animation on clicking again
-                        resetProgress()
-                        onCancelProgress?()
-                    } else {
-                        startAnimation()
-                    }
-                } else {
-                    isReset = false
-                    startAnimation()
+                if canTap && !(progress > 1.0) {
+                    manageAnimation()
                 }
             }
     }
@@ -122,6 +111,22 @@ struct SSProgressView: View {
         }
     }
     
+    private func manageAnimation() {
+        if style.allowCancelProgress && !isReset {
+            isStarted.toggle()
+            if isStarted {
+                // Cancel animation on clicking again
+                resetProgress()
+                onCancelProgress?()
+            } else {
+                startAnimation()
+            }
+        } else {
+            isReset = false
+            startAnimation()
+        }
+    }
+    
     private func progressAnimation() {
         // Showing percentage text once initial animation is done
         initialTimer = Timer.scheduledTimer(withTimeInterval: 0.6, repeats: false) { timer in
@@ -131,13 +136,8 @@ struct SSProgressView: View {
             }
         }
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+        DispatchQueue.main.asyncAfter(deadline: .now()) {
             endTimer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { timer in
-                
-                // Hiding dot once progress starts
-                if progress > 0.0 {
-                    showVerticalLine = false
-                }
                 
                 // Reset progress after progress is completed
                 if progress >= 1.0 {
@@ -149,7 +149,7 @@ struct SSProgressView: View {
                     }
                     
                     // Reset progress with animation
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                         withAnimation {
                             resetProgress()
                             isReset = true
@@ -199,7 +199,6 @@ struct SSProgressView: View {
         isDownArrow = true
         bounceEffect = 1.0
         startDotAnim = false
-        showVerticalLine = true
         showPercent = false
     }
 }
