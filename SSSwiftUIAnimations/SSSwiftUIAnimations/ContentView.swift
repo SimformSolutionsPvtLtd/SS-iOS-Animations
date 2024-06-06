@@ -20,12 +20,7 @@ struct ContentView: View {
                 }.listStyle(.insetGrouped)
                     .listRowSpacing(10)
                     .listRowSeparator(.hidden)
-                    .navigationBarTitleDisplayMode(.inline)
-                    .toolbar {
-                        ToolbarItem(placement: .principal) {
-                            Text("Examples").font(Font.system(size: 30, weight: .bold)).foregroundStyle(Color.indigo)
-                        }
-                    }
+                    .customToolbar(title: "Examples", fontSize: 30, displayMode: .inline)
             }
         }
     }

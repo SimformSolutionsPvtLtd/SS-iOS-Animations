@@ -11,13 +11,20 @@
 		2BC2D8F528CF3A6F00CAB302 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC2D8F428CF3A6F00CAB302 /* ContentView.swift */; };
 		2BC2D8F728CF3A7000CAB302 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BC2D8F628CF3A7000CAB302 /* Assets.xcassets */; };
 		2BC2D8FA28CF3A7000CAB302 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BC2D8F928CF3A7000CAB302 /* Preview Assets.xcassets */; };
+		4636F36E291E1BD600C8DB5B /* LeftArrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4636F36D291E1BD600C8DB5B /* LeftArrow.swift */; };
+		469963A5290FCE3600DC01AD /* SSLRArrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469963A4290FCE3600DC01AD /* SSLRArrowView.swift */; };
 		B10677FE2BE8D0D400957B4E /* DownArrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10677FD2BE8D0D400957B4E /* DownArrow.swift */; };
 		B1098E7D2BD94ED900BC19DD /* WaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1098E7C2BD94ED900BC19DD /* WaveView.swift */; };
 		B11B983A2BCE9C3F00D76016 /* CheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11B98392BCE9C3F00D76016 /* CheckView.swift */; };
 		B14AB36C2BC41B05004B09C4 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14AB36B2BC41B05004B09C4 /* ProgressView.swift */; };
+		B153FD0C2BFB3C1800AEFE83 /* LRArrowAnimStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B153FD0B2BFB3C1800AEFE83 /* LRArrowAnimStyle.swift */; };
 		B153FD0E2BFB566000AEFE83 /* ExampleListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B153FD0D2BFB566000AEFE83 /* ExampleListRow.swift */; };
 		B153FD102BFB649300AEFE83 /* ExampleListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B153FD0F2BFB649300AEFE83 /* ExampleListModel.swift */; };
+		B153FD132BFB71F500AEFE83 /* FilledStrokeCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B153FD122BFB71F500AEFE83 /* FilledStrokeCircle.swift */; };
+		B153FD152BFB7A7900AEFE83 /* ExampleLRArrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B153FD142BFB7A7900AEFE83 /* ExampleLRArrowView.swift */; };
+		B15FD7992C04785700752CEA /* CustomToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15FD7982C04785700752CEA /* CustomToolBar.swift */; };
 		B177713F2BF39A60001723EC /* ModelClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B177713E2BF39A60001723EC /* ModelClass.swift */; };
+		B18792612AA5A0D2006F2CC9 /* CircularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18792602AA5A0D2006F2CC9 /* CircularView.swift */; };
 		B19E0B662BF7498700E65974 /* ExampleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19E0B652BF7498700E65974 /* ExampleProgressView.swift */; };
 		B1DFCA512BF4FA3D00F01505 /* ProgressCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DFCA502BF4FA3D00F01505 /* ProgressCircle.swift */; };
 		B1DFCA532BF4FC7900F01505 /* ArrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DFCA522BF4FC7900F01505 /* ArrowView.swift */; };
@@ -30,13 +37,20 @@
 		2BC2D8F428CF3A6F00CAB302 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2BC2D8F628CF3A7000CAB302 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BC2D8F928CF3A7000CAB302 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4636F36D291E1BD600C8DB5B /* LeftArrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftArrow.swift; sourceTree = "<group>"; };
+		469963A4290FCE3600DC01AD /* SSLRArrowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSLRArrowView.swift; sourceTree = "<group>"; };
 		B10677FD2BE8D0D400957B4E /* DownArrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownArrow.swift; sourceTree = "<group>"; };
 		B1098E7C2BD94ED900BC19DD /* WaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveView.swift; sourceTree = "<group>"; };
 		B11B98392BCE9C3F00D76016 /* CheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckView.swift; sourceTree = "<group>"; };
 		B14AB36B2BC41B05004B09C4 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		B153FD0B2BFB3C1800AEFE83 /* LRArrowAnimStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRArrowAnimStyle.swift; sourceTree = "<group>"; };
 		B153FD0D2BFB566000AEFE83 /* ExampleListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleListRow.swift; sourceTree = "<group>"; };
 		B153FD0F2BFB649300AEFE83 /* ExampleListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleListModel.swift; sourceTree = "<group>"; };
+		B153FD122BFB71F500AEFE83 /* FilledStrokeCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilledStrokeCircle.swift; sourceTree = "<group>"; };
+		B153FD142BFB7A7900AEFE83 /* ExampleLRArrowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleLRArrowView.swift; sourceTree = "<group>"; };
+		B15FD7982C04785700752CEA /* CustomToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomToolBar.swift; sourceTree = "<group>"; };
 		B177713E2BF39A60001723EC /* ModelClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelClass.swift; sourceTree = "<group>"; };
+		B18792602AA5A0D2006F2CC9 /* CircularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularView.swift; sourceTree = "<group>"; };
 		B19E0B652BF7498700E65974 /* ExampleProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleProgressView.swift; sourceTree = "<group>"; };
 		B1DFCA502BF4FA3D00F01505 /* ProgressCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCircle.swift; sourceTree = "<group>"; };
 		B1DFCA522BF4FC7900F01505 /* ArrowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowView.swift; sourceTree = "<group>"; };
@@ -74,8 +88,9 @@
 			isa = PBXGroup;
 			children = (
 				B14AB36A2BC40286004B09C4 /* ProgressAnimation */,
-				B153FD112BFB64BE00AEFE83 /* Examples */,
+				469963A3290FCE1900DC01AD /* ArrowLeftRightAnimation */,
 				2BC2D8F228CF3A6F00CAB302 /* SSSwiftUIAnimationsApp.swift */,
+				B153FD112BFB64BE00AEFE83 /* Examples */,
 				2BC2D8F428CF3A6F00CAB302 /* ContentView.swift */,
 				2BC2D8F628CF3A7000CAB302 /* Assets.xcassets */,
 				2BC2D8F828CF3A7000CAB302 /* Preview Content */,
@@ -89,6 +104,18 @@
 				2BC2D8F928CF3A7000CAB302 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		469963A3290FCE1900DC01AD /* ArrowLeftRightAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				469963A4290FCE3600DC01AD /* SSLRArrowView.swift */,
+				4636F36D291E1BD600C8DB5B /* LeftArrow.swift */,
+				B18792602AA5A0D2006F2CC9 /* CircularView.swift */,
+				B153FD0B2BFB3C1800AEFE83 /* LRArrowAnimStyle.swift */,
+				B153FD122BFB71F500AEFE83 /* FilledStrokeCircle.swift */,
+			);
+			path = ArrowLeftRightAnimation;
 			sourceTree = "<group>";
 		};
 		B14AB36A2BC40286004B09C4 /* ProgressAnimation */ = {
@@ -110,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				B19E0B652BF7498700E65974 /* ExampleProgressView.swift */,
+				B153FD142BFB7A7900AEFE83 /* ExampleLRArrowView.swift */,
 				B1F9ED332BFCD85000189871 /* ExamplesList */,
 			);
 			path = Examples;
@@ -120,6 +148,7 @@
 			children = (
 				B153FD0F2BFB649300AEFE83 /* ExampleListModel.swift */,
 				B153FD0D2BFB566000AEFE83 /* ExampleListRow.swift */,
+				B15FD7982C04785700752CEA /* CustomToolBar.swift */,
 			);
 			path = ExamplesList;
 			sourceTree = "<group>";
@@ -201,6 +230,14 @@
 				B10677FE2BE8D0D400957B4E /* DownArrow.swift in Sources */,
 				B1098E7D2BD94ED900BC19DD /* WaveView.swift in Sources */,
 				B19E0B662BF7498700E65974 /* ExampleProgressView.swift in Sources */,
+				B18792612AA5A0D2006F2CC9 /* CircularView.swift in Sources */,
+				B153FD152BFB7A7900AEFE83 /* ExampleLRArrowView.swift in Sources */,
+				2BC2D8F528CF3A6F00CAB302 /* ContentView.swift in Sources */,
+				4636F36E291E1BD600C8DB5B /* LeftArrow.swift in Sources */,
+				B15FD7992C04785700752CEA /* CustomToolBar.swift in Sources */,
+				469963A5290FCE3600DC01AD /* SSLRArrowView.swift in Sources */,
+				B153FD0C2BFB3C1800AEFE83 /* LRArrowAnimStyle.swift in Sources */,
+				B153FD132BFB71F500AEFE83 /* FilledStrokeCircle.swift in Sources */,
 				2BC2D8F328CF3A6F00CAB302 /* SSSwiftUIAnimationsApp.swift in Sources */,
 				B1DFCA532BF4FC7900F01505 /* ArrowView.swift in Sources */,
 				B11B983A2BCE9C3F00D76016 /* CheckView.swift in Sources */,
@@ -335,7 +372,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SSSwiftUIAnimations/Preview Content\"";
-				DEVELOPMENT_TEAM = 5LTPQLLYU7;
+				DEVELOPMENT_TEAM = K7XJG666ZW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -364,7 +401,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SSSwiftUIAnimations/Preview Content\"";
-				DEVELOPMENT_TEAM = 5LTPQLLYU7;
+				DEVELOPMENT_TEAM = K7XJG666ZW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
