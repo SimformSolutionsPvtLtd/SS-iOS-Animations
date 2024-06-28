@@ -7,14 +7,27 @@
 
 import SwiftUI
 
+/// A view that displays an animated circular loading indicator using a series of vertical sticks.
 struct CircularLoading: View {
+    /// The sticks to be displayed in the loading indicator.
     @State private var sticks: [Stick]
+    /// The size of the circle.
     private let circleSize: CGFloat
+    /// The width of each stick.
     private let stickWidth: CGFloat
+    /// The color of a filled stick.
     private let filledColor: Color
+    /// The color of an unfilled stick.
     private let unFilledColor: Color
+    /// The duration of the animation for each stick.
     private let perStickDuration: Double
     
+    /// Initializes the `CircularLoading` view.
+    /// - Parameters:
+    ///   - size: The size of the view.
+    ///   - filledColor: The color of a filled stick.
+    ///   - unFilledColor: The color of an unfilled stick.
+    ///   - duration: The total duration of the animation.
     init(
         size: CGSize,
         filledColor: Color,
@@ -55,6 +68,10 @@ struct CircularLoading: View {
             }
     }
     
+    /// Animates the stick view.
+    /// - Parameters:
+    ///   - index: The index of the current stick.
+    ///   - color: The color to animate to.
     private func animateStickView(index: Int, color: Color) {
         if #available(iOS 17.0, *) {
             withAnimation(Animation.linear(duration: perStickDuration)) {
@@ -72,11 +89,19 @@ struct CircularLoading: View {
         }
     }
     
+    /// Updates the properties of the stick view.
+    /// - Parameters:
+    ///   - index: The index of the current stick.
+    ///   - color: The color to animate to.
     private func updateStickViewProperties(index: Int, color: Color) {
         sticks[index].xAxis = 0.6
         sticks[index].color = color
     }
     
+    /// Resets the stick view animation.
+    /// - Parameters:
+    ///   - index: The index of the current stick.
+    ///   - color: The color to animate to.
     private func resertStickViewAnimation(index: Int, color: Color) {
         withAnimation(Animation.linear(duration: perStickDuration * 10)) {
             sticks[index].xAxis = 0

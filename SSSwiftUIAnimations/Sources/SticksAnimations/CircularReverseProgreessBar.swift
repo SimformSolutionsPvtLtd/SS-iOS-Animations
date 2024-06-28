@@ -7,17 +7,35 @@
 
 import SwiftUI
 
-struct CircularReverseProgreessBar: View {
+/// A view that displays a circular progress bar which animates forwards and then reverses.
+struct CircularReverseProgressBar: View {
+    /// The last index of the stick that was updated.
     @State private var lastStickIndex: Int = 0
+    /// The percentage of progress to be displayed.
     @Binding private var percentage: Double
+    /// The sticks to be displayed in the loading indicator.
     @State private var sticks: [Stick]
+    /// The size of the circle.
     private let circleSize: CGFloat
+    /// The width of each stick.
     private let stickWidth: CGFloat
+    /// The color of the progress.
     private let progressColor: Color
+    /// The color of a filled stick.
     private let filledColor: Color
+    /// The color of an unfilled stick.
     private let unFilledColor: Color
+    /// The duration of the animation for each stick.
     private let perStickDuration: Double
     
+    /// Initializes the `CircularReverseProgressBar` view.
+    /// - Parameters:
+    ///   - percentage: The binding to the progress percentage.
+    ///   - size: The size of the view.
+    ///   - progressColor: The color of the progress.
+    ///   - filledColor: The color of a filled stick.
+    ///   - unFilledColor: The color of an unfilled stick.
+    ///   - duration: The total duration of the animation.
     init(
         percentage: Binding<Double>,
         size: CGSize,
@@ -62,6 +80,10 @@ struct CircularReverseProgreessBar: View {
             }
     }
     
+    /// Animates the stick view.
+    /// - Parameters:
+    ///   - index: The index of the current stick.
+    ///   - isReversing: A boolean indicating whether the animation is in reverse mode.
     private func animateStickView(index: Int, isReversing: Bool) {
         if #available(iOS 17.0, *) {
             withAnimation(Animation.linear(duration: perStickDuration)) {
@@ -79,6 +101,10 @@ struct CircularReverseProgreessBar: View {
         }
     }
     
+    /// Updates the properties of the stick view.
+    /// - Parameters:
+    ///   - index: The index of the current stick.
+    ///   - isReversing: A boolean indicating whether the animation is in reverse mode.
     private func updateStickViewProperties(index: Int, isReversing: Bool) {
         sticks[index].xAxis = isReversing ? -0.6 : 0.6
         sticks[index].color = getStickColor(forIndex: index, isReversing: isReversing)
@@ -92,6 +118,10 @@ struct CircularReverseProgreessBar: View {
         lastStickIndex = finalIndex
     }
     
+    /// Resets the stick view animation.
+    /// - Parameters:
+    ///   - index: The index of the current stick.
+    ///   - isReversing: A boolean indicating whether the animation is in reverse mode.
     private func resertStickViewAnimation(index: Int, isReversing: Bool) {
         withAnimation(Animation.linear(duration: perStickDuration)) {
             sticks[index].xAxis = 0
@@ -104,6 +134,11 @@ struct CircularReverseProgreessBar: View {
         }
     }
     
+    /// Gets the color for the stick at a specific index.
+    /// - Parameters:
+    ///   - index: The index of the stick.
+    ///   - isReversing: A boolean indicating whether the animation is in reverse mode.
+    /// - Returns: The color for the stick.
     private func getStickColor(forIndex index: Int, isReversing: Bool) -> Color {
         return if (index == lastStickIndex) {
             filledColor
@@ -116,9 +151,9 @@ struct CircularReverseProgreessBar: View {
 }
 
 #Preview {
-    CircularReverseProgreessBar(
+    CircularReverseProgressBar(
         percentage: .constant(100),
-        size: CGSize(width: 50, height: 250),
+        size: CGSize(width: 150, height: 150),
         progressColor: .red,
         filledColor: .green,
         unFilledColor: .gray,

@@ -15,10 +15,10 @@ struct ContentView: View {
         NavigationView {
             VStack {
                 StickAnimations(
-                    type: .circularReversableProgressBar(percentage: $percentage),
+                    type: .linearLoading(),
                     duration: 3
                 )
-                .frame(width: 150)
+                .frame(width: 150, height: 50)
                 Text(String(percentage))
                 Slider(value: $percentage, in: 0...100, step: 1)
                     .padding()

@@ -7,19 +7,42 @@
 
 import SwiftUI
 
+/// A view that displays a linear progress bar with animated sticks that fill and reverse.
 struct LinearProgress: View {
+    /// The last index of the stick that was updated.
     @State private var lastStickIndex: Int = 0
+    /// The percentage of progress to be displayed.
     @Binding private var percentage: Double
+    /// The sticks to be displayed in the progress bar.
     @State private var sticks: [Stick]
+    /// The width of each stick.
     private let stickWidth: CGFloat
+    /// The height of each stick.
     private let stickHeight: CGFloat
+    /// The spacing between each stick.
     private let spacing: CGFloat
+    /// The color of the progress.
     private let progressColor: Color
+    /// The color of a filled stick.
     private let filledColor: Color
+    /// The color of an unfilled stick.
     private let unFilledColor: Color
+    /// The duration of the animation for each stick.
     private let perStickDuration: Double
+    /// Whether to allow height animation for the sticks.
     private let allowHeightAnimation: Bool
     
+    /// Initializes the `LinearProgress` view.
+    /// - Parameters:
+    ///   - percentage: The binding to the progress percentage.
+    ///   - size: The size of the view.
+    ///   - stickWidth: The width of each stick.
+    ///   - spacing: The spacing between each stick.
+    ///   - progressColor: The color of the progress.
+    ///   - filledColor: The color of a filled stick.
+    ///   - unFilledColor: The color of an unfilled stick.
+    ///   - duration: The total duration of the animation.
+    ///   - allowHeightAnimation: Whether to allow height animation for the sticks.
     init(
         percentage: Binding<Double>,
         size: CGSize,
@@ -64,6 +87,10 @@ struct LinearProgress: View {
         }
     }
     
+    /// Animates the stick view.
+    /// - Parameters:
+    ///   - index: The index of the current stick.
+    ///   - isReversing: A boolean indicating whether the animation is in reverse mode.
     private func animateStickView(index: Int, isReversing: Bool) {
         if #available(iOS 17.0, *) {
             withAnimation(Animation.linear(duration: perStickDuration)) {
@@ -81,6 +108,10 @@ struct LinearProgress: View {
         }
     }
     
+    /// Updates the properties of the stick view.
+    /// - Parameters:
+    ///   - index: The index of the current stick.
+    ///   - isReversing: A boolean indicating whether the animation is in reverse mode.
     private func updateStickViewProperties(index: Int, isReversing: Bool) {
         sticks[index].xAxis = isReversing ? (spacing * -1) : spacing
         sticks[index].stickHeight = allowHeightAnimation ? stickHeight * 1.25 : stickHeight
@@ -95,14 +126,26 @@ struct LinearProgress: View {
         lastStickIndex = finalIndex
     }
     
+    /// Gets the color for the stick at a specific index.
+    /// - Parameters:
+    ///   - index: The index of the stick.
+    ///   - isReversing: A boolean indicating whether the animation is in reverse mode.
+    /// - Returns: The color for the stick.
     private func getStickColor(forIndex index: Int, isReversing: Bool) -> Color {
-        return switch (index) {
-        case sticks.indices.last : unFilledColor
-        case lastStickIndex : filledColor
-        default: isReversing ? unFilledColor : filledColor
+        switch index {
+        case sticks.indices.last:
+            return unFilledColor
+        case lastStickIndex:
+            return filledColor
+        default:
+            return isReversing ? unFilledColor : filledColor
         }
     }
     
+    /// Resets the stick view animation.
+    /// - Parameters:
+    ///   - index: The index of the current stick.
+    ///   - isReversing: A boolean indicating whether the animation is in reverse mode.
     private func resertStickViewAnimation(index: Int, isReversing: Bool) {
         withAnimation(Animation.linear(duration: perStickDuration)) {
             sticks[index].xAxis = 0

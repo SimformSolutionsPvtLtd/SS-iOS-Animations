@@ -7,13 +7,19 @@
 
 import SwiftUI
 
+/// A view that displays various types of stick animations based on the provided `StickAnimationType`.
 struct StickAnimations: View {
     
+    /// The type of stick animation to display.
     let type: StickAnimationType
+    /// The color for filled sticks.
     let filledColor: Color = .black
+    /// The color for unfilled sticks.
     let unFilledColor: Color = .gray
+    /// The duration of the animation.
     var duration: Double = 1
     
+    /// A view builder that returns the appropriate animation view based on the `type`.
     @ViewBuilder
     var contentView: some View {
         GeometryReader { geometry in
@@ -31,6 +37,7 @@ struct StickAnimations: View {
                     duration: duration,
                     allowHeightAnimation: allowHeightAnimation
                 )
+                .frame(width: geometry.size.width, height: geometry.size.height)
                 
             case .linearProgressBar(
                 percentage: let percentage,
@@ -48,7 +55,9 @@ struct StickAnimations: View {
                     filledColor: filledColor,
                     unFilledColor: unFilledColor,
                     duration: duration,
-                    allowHeightAnimation: allowHeightAnimation)
+                    allowHeightAnimation: allowHeightAnimation
+                )
+                .frame(width: geometry.size.width, height: geometry.size.height)
                 
             case .circularLoading:
                 CircularLoading(
@@ -57,6 +66,7 @@ struct StickAnimations: View {
                     unFilledColor: unFilledColor,
                     duration: duration
                 )
+                .frame(width: geometry.size.width, height: geometry.size.height)
                 
             case .circularProgressBar(percentage: let percentage):
                 CircularProgress(
@@ -66,18 +76,21 @@ struct StickAnimations: View {
                     unFilledColor: unFilledColor,
                     duration: duration
                 )
+                .frame(width: geometry.size.width, height: geometry.size.height)
                 
             case .circularReversableProgressBar(
                 percentage: let percentage,
                 progressColor: let progressColor
             ):
-                CircularReverseProgreessBar(
+                CircularReverseProgressBar(
                     percentage: percentage,
                     size: geometry.size,
                     progressColor: progressColor,
                     filledColor: filledColor,
                     unFilledColor: unFilledColor,
-                    duration: duration)
+                    duration: duration
+                )
+                .frame(width: geometry.size.width, height: geometry.size.height)
             }
         }
     }

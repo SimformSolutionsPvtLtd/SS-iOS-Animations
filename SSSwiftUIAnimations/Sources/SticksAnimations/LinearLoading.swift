@@ -7,16 +7,34 @@
 
 import SwiftUI
 
+/// A view that displays an animated loading indicator using a series of vertical sticks.
 struct LinearLoading: View {
+    /// The sticks to be displayed in the loading indicator.
     @State private var sticks: [Stick]
+    /// The width of each stick.
     private let stickWidth: CGFloat
+    /// The height of each stick.
     private let stickHeight: CGFloat
+    /// The spacing between each stick.
     private let spacing: CGFloat
+    /// The color of a filled stick which indicate as Progressed.
     private let filledColor: Color
+    /// The color of an unfilled stick.
     private let unFilledColor: Color
+    /// The duration of the animation for each stick.
     private let perStickDuration: Double
+    /// A flag to allow height animation for the sticks.
     private let allowHeightAnimation: Bool
     
+    /// Initializes the `LinearLoading` view.
+    /// - Parameters:
+    ///   - size: The size of the view.
+    ///   - stickWidth: The width of each stick.
+    ///   - spacing: The spacing between each stick.
+    ///   - filledColor: The color of a filled stick.
+    ///   - unFilledColor: The color of an unfilled stick.
+    ///   - duration: The total duration of the animation.
+    ///   - allowHeightAnimation: A flag to allow height animation for the sticks.
     init(
         size: CGSize,
         stickWidth: Float,
@@ -58,6 +76,10 @@ struct LinearLoading: View {
         }
     }
     
+    /// Animates the stick view.
+    /// - Parameters:
+    ///   - index: The index of the current stick.
+    ///   - isReversing: A flag to indicate if the animation is reversing.
     private func animateStickView(index: Int, isReversing: Bool) {
         if #available(iOS 17.0, *) {
             withAnimation(Animation.linear(duration: perStickDuration)) {
@@ -75,12 +97,21 @@ struct LinearLoading: View {
         }
     }
     
+    /// Updates the properties of the stick view.
+    /// - Parameters:
+    ///   - index: The index of the current stick.
+    ///   - isReversing: A flag to indicate if the animation is reversing.
     private func updateStickViewProperties(index: Int, isReversing: Bool) {
         sticks[index].xAxis = isReversing ? (spacing * -1) : spacing
         sticks[index].stickHeight = allowHeightAnimation ? stickHeight * 1.25 : stickHeight
         sticks[index].color = getStickColor(forIndex: index, isReversing: isReversing)
     }
     
+    /// Gets the color of the stick.
+    /// - Parameters:
+    ///   - index: The index of the current stick.
+    ///   - isReversing: A flag to indicate if the animation is reversing.
+    /// - Returns: The color of the stick.
     private func getStickColor(forIndex index: Int, isReversing: Bool) -> Color {
         return switch (index) {
         case 0 : filledColor
@@ -89,6 +120,10 @@ struct LinearLoading: View {
         }
     }
     
+    /// Resets the stick view animation.
+    /// - Parameters:
+    ///   - index: The index of the current stick.
+    ///   - isReversing: A flag to indicate if the animation is reversing.
     private func resertStickViewAnimation(index: Int, isReversing: Bool) {
         withAnimation(Animation.linear(duration: perStickDuration)) {
             sticks[index].xAxis = 0

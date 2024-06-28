@@ -7,15 +7,30 @@
 
 import SwiftUI
 
+/// A view that displays a circular progress indicator using a series of vertical sticks.
 struct CircularProgress: View {
+    /// The percentage of progress to be displayed.
     @Binding private var percentage: Double
+    /// The sticks to be displayed in the loading indicator.
     @State private var sticks: [Stick]
+    /// The size of the circle.
     private let circleSize: CGFloat
+    /// The width of each stick.
     private let stickWidth: CGFloat
+    /// The color of a filled stick.
     private let filledColor: Color
+    /// The color of an unfilled stick.
     private let unFilledColor: Color
+    /// The duration of the animation for each stick.
     private let perStickDuration: Double
     
+    /// Initializes the `CircularProgress` view.
+    /// - Parameters:
+    ///   - percentage: The binding to the progress percentage.
+    ///   - size: The size of the view.
+    ///   - filledColor: The color of a filled stick.
+    ///   - unFilledColor: The color of an unfilled stick.
+    ///   - duration: The total duration of the animation.
     init(
         percentage: Binding<Double>,
         size: CGSize,
@@ -59,6 +74,10 @@ struct CircularProgress: View {
             }
     }
     
+    /// Animates the stick view.
+    /// - Parameters:
+    ///   - index: The index of the current stick.
+    ///   - color: The color to animate to.
     private func animateStickView(index: Int, color: Color) {
         if #available(iOS 17.0, *) {
             withAnimation(Animation.linear(duration: perStickDuration)) {
@@ -76,6 +95,10 @@ struct CircularProgress: View {
         }
     }
     
+    /// Updates the properties of the stick view.
+    /// - Parameters:
+    ///   - index: The index of the current stick.
+    ///   - color: The color to animate to.
     private func updateStickViewProperties(index: Int, color: Color) {
         changeStictsColor(color: unFilledColor)
         let validatedPercentage = min(max(0, percentage), 100)
@@ -90,15 +113,25 @@ struct CircularProgress: View {
         }
     }
     
+    /// Changes the color of all sticks.
+    /// - Parameter color: The color to set for all sticks.
     private func changeStictsColor(color: Color) {
         sticks.indices.forEach { updateStickColor(at: $0, color: color) }
     }
     
+    /// Updates the color of a specific stick.
+    /// - Parameters:
+    ///   - index: The index of the stick to update.
+    ///   - color: The color to set.
     private func updateStickColor(at index: Int, color: Color) {
         let adjustedIndex = (index + sticks.count) % sticks.count
         sticks[adjustedIndex].color = color
     }
     
+    /// Resets the stick view animation.
+    /// - Parameters:
+    ///   - index: The index of the current stick.
+    ///   - color: The color to animate to.
     private func resertStickViewAnimation(index: Int, color: Color) {
         let nextIndex = (index == sticks.indices.last) ? 0 : index + 1
         animateStickView(index: nextIndex, color: color)
@@ -108,7 +141,7 @@ struct CircularProgress: View {
 #Preview {
     CircularProgress(
         percentage: .constant(75),
-        size: CGSize(width: 50, height: 250),
+        size: CGSize(width: 150, height: 150),
         filledColor: .green,
         unFilledColor: .gray,
         duration: 1
