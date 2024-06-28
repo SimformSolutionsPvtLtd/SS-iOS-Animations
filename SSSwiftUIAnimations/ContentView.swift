@@ -8,19 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var percentage: Double = 0
     private var exampleList = ExampleListModel.exampleList
     
     var body: some View {
         NavigationView {
-            ZStack {
-                List{
-                    ForEach(exampleList) {item in
-                        ExampleListRow(exampleListItem: item)
-                    }
-                }.listStyle(.insetGrouped)
-                    .listRowSpacing(10)
-                    .listRowSeparator(.hidden)
-                    .customToolbar(title: "Examples", fontSize: 30, displayMode: .inline)
+            VStack {
+                StickAnimations(
+                    type: .linearLoading(),
+                    duration: 3
+                )
+                .frame(width: 150, height: 50)
+                Text(String(percentage))
+                Slider(value: $percentage, in: 0...100, step: 1)
+                    .padding()
             }
         }
     }
