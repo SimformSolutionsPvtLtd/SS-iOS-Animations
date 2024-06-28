@@ -12,7 +12,7 @@ struct StickAnimations: View {
     let type: StickAnimationType
     let filledColor: Color = .black
     let unFilledColor: Color = .gray
-    let duration: Double = 1
+    var duration: Double = 1
     
     @ViewBuilder
     var contentView: some View {

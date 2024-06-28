@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CircularProgress: View {
-    @Binding private var percentage: Float
+    @Binding private var percentage: Double
     @State private var sticks: [Stick]
     private let circleSize: CGFloat
     private let stickWidth: CGFloat
@@ -17,7 +17,7 @@ struct CircularProgress: View {
     private let perStickDuration: Double
     
     init(
-        percentage: Binding<Float>,
+        percentage: Binding<Double>,
         size: CGSize,
         filledColor: Color,
         unFilledColor: Color,

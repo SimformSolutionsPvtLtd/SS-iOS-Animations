@@ -21,9 +21,9 @@ enum StickAnimationType {
         allowHeightAnimation: Bool = true
     )
     case circularLoading
-    case circularProgressBar(percentage: Binding<Float>)
+    case circularProgressBar(percentage: Binding<Double>)
     case circularReversableProgressBar(
-        percentage: Binding<Float>,
+        percentage: Binding<Double>,
         progressColor: Color = .green
     )
 }

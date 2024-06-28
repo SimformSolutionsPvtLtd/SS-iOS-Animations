@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CircularReverseProgreessBar: View {
     @State private var lastStickIndex: Int = 0
-    @Binding private var percentage: Float
+    @Binding private var percentage: Double
     @State private var sticks: [Stick]
     private let circleSize: CGFloat
     private let stickWidth: CGFloat
@@ -19,7 +19,7 @@ struct CircularReverseProgreessBar: View {
     private let perStickDuration: Double
     
     init(
-        percentage: Binding<Float>,
+        percentage: Binding<Double>,
         size: CGSize,
         progressColor: Color,
         filledColor: Color,
