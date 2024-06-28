@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		223F502E2C2E95F3006C68CE /* CircularLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223F502D2C2E95F3006C68CE /* CircularLoading.swift */; };
+		223F50342C2E9636006C68CE /* LinearLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223F502F2C2E9636006C68CE /* LinearLoading.swift */; };
+		223F50352C2E9636006C68CE /* LinearProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223F50302C2E9636006C68CE /* LinearProgress.swift */; };
+		223F50362C2E9636006C68CE /* CircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223F50312C2E9636006C68CE /* CircularProgress.swift */; };
+		223F50372C2E9636006C68CE /* CircularReverseProgreessBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223F50322C2E9636006C68CE /* CircularReverseProgreessBar.swift */; };
+		223F50382C2E9636006C68CE /* Stick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223F50332C2E9636006C68CE /* Stick.swift */; };
 		2BC2D8F328CF3A6F00CAB302 /* SSSwiftUIAnimationsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC2D8F228CF3A6F00CAB302 /* SSSwiftUIAnimationsApp.swift */; };
 		2BC2D8F528CF3A6F00CAB302 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC2D8F428CF3A6F00CAB302 /* ContentView.swift */; };
 		2BC2D8F728CF3A7000CAB302 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BC2D8F628CF3A7000CAB302 /* Assets.xcassets */; };
@@ -35,6 +41,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		223F502D2C2E95F3006C68CE /* CircularLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularLoading.swift; sourceTree = "<group>"; };
+		223F502F2C2E9636006C68CE /* LinearLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinearLoading.swift; sourceTree = "<group>"; };
+		223F50302C2E9636006C68CE /* LinearProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinearProgress.swift; sourceTree = "<group>"; };
+		223F50312C2E9636006C68CE /* CircularProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularProgress.swift; sourceTree = "<group>"; };
+		223F50322C2E9636006C68CE /* CircularReverseProgreessBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularReverseProgreessBar.swift; sourceTree = "<group>"; };
+		223F50332C2E9636006C68CE /* Stick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stick.swift; sourceTree = "<group>"; };
 		2BC2D8EF28CF3A6F00CAB302 /* SSSwiftUIAnimations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSSwiftUIAnimations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BC2D8F228CF3A6F00CAB302 /* SSSwiftUIAnimationsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSSwiftUIAnimationsApp.swift; sourceTree = "<group>"; };
 		2BC2D8F428CF3A6F00CAB302 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,6 +86,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		223F502C2C2E95D6006C68CE /* SticksAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				223F502D2C2E95F3006C68CE /* CircularLoading.swift */,
+				223F50312C2E9636006C68CE /* CircularProgress.swift */,
+				223F50322C2E9636006C68CE /* CircularReverseProgreessBar.swift */,
+				223F502F2C2E9636006C68CE /* LinearLoading.swift */,
+				223F50302C2E9636006C68CE /* LinearProgress.swift */,
+				223F50332C2E9636006C68CE /* Stick.swift */,
+			);
+			path = SticksAnimations;
+			sourceTree = "<group>";
+		};
 		2BC2D8E628CF3A6F00CAB302 = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +187,7 @@
 		B1DE99D72C060E1A006995FB /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				223F502C2C2E95D6006C68CE /* SticksAnimations */,
 				B14AB36A2BC40286004B09C4 /* ProgressAnimation */,
 				469963A3290FCE1900DC01AD /* ArrowLeftRightAnimation */,
 			);
@@ -265,6 +291,7 @@
 				B177713F2BF39A60001723EC /* ModelClass.swift in Sources */,
 				B10677FE2BE8D0D400957B4E /* DownArrow.swift in Sources */,
 				B1098E7D2BD94ED900BC19DD /* WaveView.swift in Sources */,
+				223F50372C2E9636006C68CE /* CircularReverseProgreessBar.swift in Sources */,
 				B19E0B662BF7498700E65974 /* ExampleProgressView.swift in Sources */,
 				B18792612AA5A0D2006F2CC9 /* CircularView.swift in Sources */,
 				B153FD152BFB7A7900AEFE83 /* ExampleLRArrowView.swift in Sources */,
@@ -274,8 +301,13 @@
 				469963A5290FCE3600DC01AD /* SSLRArrowView.swift in Sources */,
 				B153FD0C2BFB3C1800AEFE83 /* LRArrowAnimStyle.swift in Sources */,
 				B153FD132BFB71F500AEFE83 /* FilledStrokeCircle.swift in Sources */,
+				223F50362C2E9636006C68CE /* CircularProgress.swift in Sources */,
+				223F50352C2E9636006C68CE /* LinearProgress.swift in Sources */,
+				223F502E2C2E95F3006C68CE /* CircularLoading.swift in Sources */,
 				2BC2D8F328CF3A6F00CAB302 /* SSSwiftUIAnimationsApp.swift in Sources */,
 				B1DFCA532BF4FC7900F01505 /* ArrowView.swift in Sources */,
+				223F50382C2E9636006C68CE /* Stick.swift in Sources */,
+				223F50342C2E9636006C68CE /* LinearLoading.swift in Sources */,
 				B11B983A2BCE9C3F00D76016 /* CheckView.swift in Sources */,
 				B1DFCA512BF4FA3D00F01505 /* ProgressCircle.swift in Sources */,
 				B14AB36C2BC41B05004B09C4 /* ProgressView.swift in Sources */,
