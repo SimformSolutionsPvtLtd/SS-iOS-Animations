@@ -32,6 +32,14 @@
 		B1DFCA532BF4FC7900F01505 /* ArrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DFCA522BF4FC7900F01505 /* ArrowView.swift */; };
 		B1EA09DE2C11A6B70024BC28 /* Banner.png in Resources */ = {isa = PBXBuildFile; fileRef = B1EA09DD2C11A6B70024BC28 /* Banner.png */; };
 		B1FE861E2BFF6BC000FB111C /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FE861D2BFF6BC000FB111C /* ViewExtension.swift */; };
+		B717EC9D2C45488100555F90 /* CheckmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B717EC9C2C45488100555F90 /* CheckmarkView.swift */; };
+		B741D9A62C46448200ABFCB4 /* WaterProgressTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B741D9A52C46448200ABFCB4 /* WaterProgressTextView.swift */; };
+		B780A9182C3D063500342512 /* WaterProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B780A9172C3D063500342512 /* WaterProgressView.swift */; };
+		B780A91A2C3D0BCB00342512 /* WaterProgressViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B780A9192C3D0BCB00342512 /* WaterProgressViewStyle.swift */; };
+		B780A9242C3D7A7C00342512 /* WaterCircleOutlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B780A9232C3D7A7C00342512 /* WaterCircleOutlineView.swift */; };
+		B780A9262C3D806300342512 /* ExampleWaterProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B780A9252C3D806300342512 /* ExampleWaterProgressView.swift */; };
+		B780A9282C3D851700342512 /* WaterCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B780A9272C3D851700342512 /* WaterCircleView.swift */; };
+		B7ECD58D2C452D8100B6A703 /* BubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7ECD58C2C452D8100B6A703 /* BubbleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +69,14 @@
 		B1DFCA522BF4FC7900F01505 /* ArrowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowView.swift; sourceTree = "<group>"; };
 		B1EA09DD2C11A6B70024BC28 /* Banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Banner.png; sourceTree = "<group>"; };
 		B1FE861D2BFF6BC000FB111C /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		B717EC9C2C45488100555F90 /* CheckmarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckmarkView.swift; sourceTree = "<group>"; };
+		B741D9A52C46448200ABFCB4 /* WaterProgressTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterProgressTextView.swift; sourceTree = "<group>"; };
+		B780A9172C3D063500342512 /* WaterProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterProgressView.swift; sourceTree = "<group>"; };
+		B780A9192C3D0BCB00342512 /* WaterProgressViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterProgressViewStyle.swift; sourceTree = "<group>"; };
+		B780A9232C3D7A7C00342512 /* WaterCircleOutlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterCircleOutlineView.swift; sourceTree = "<group>"; };
+		B780A9252C3D806300342512 /* ExampleWaterProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleWaterProgressView.swift; sourceTree = "<group>"; };
+		B780A9272C3D851700342512 /* WaterCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterCircleView.swift; sourceTree = "<group>"; };
+		B7ECD58C2C452D8100B6A703 /* BubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +170,7 @@
 			children = (
 				B19E0B652BF7498700E65974 /* ExampleProgressView.swift */,
 				B153FD142BFB7A7900AEFE83 /* ExampleLRArrowView.swift */,
+				B780A9252C3D806300342512 /* ExampleWaterProgressView.swift */,
 				B1F9ED332BFCD85000189871 /* ExamplesList */,
 			);
 			path = Examples;
@@ -162,6 +179,7 @@
 		B1DE99D72C060E1A006995FB /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				B780A9162C3D05CD00342512 /* WaterProgressAnimation */,
 				B14AB36A2BC40286004B09C4 /* ProgressAnimation */,
 				469963A3290FCE1900DC01AD /* ArrowLeftRightAnimation */,
 			);
@@ -184,6 +202,20 @@
 				B15FD7982C04785700752CEA /* CustomToolBar.swift */,
 			);
 			path = ExamplesList;
+			sourceTree = "<group>";
+		};
+		B780A9162C3D05CD00342512 /* WaterProgressAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				B780A9172C3D063500342512 /* WaterProgressView.swift */,
+				B780A9192C3D0BCB00342512 /* WaterProgressViewStyle.swift */,
+				B780A9232C3D7A7C00342512 /* WaterCircleOutlineView.swift */,
+				B780A9272C3D851700342512 /* WaterCircleView.swift */,
+				B7ECD58C2C452D8100B6A703 /* BubbleView.swift */,
+				B717EC9C2C45488100555F90 /* CheckmarkView.swift */,
+				B741D9A52C46448200ABFCB4 /* WaterProgressTextView.swift */,
+			);
+			path = WaterProgressAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,10 +305,18 @@
 				B15FD7992C04785700752CEA /* CustomToolBar.swift in Sources */,
 				469963A5290FCE3600DC01AD /* SSLRArrowView.swift in Sources */,
 				B153FD0C2BFB3C1800AEFE83 /* LRArrowAnimStyle.swift in Sources */,
+				B717EC9D2C45488100555F90 /* CheckmarkView.swift in Sources */,
+				B780A9282C3D851700342512 /* WaterCircleView.swift in Sources */,
 				B153FD132BFB71F500AEFE83 /* FilledStrokeCircle.swift in Sources */,
 				2BC2D8F328CF3A6F00CAB302 /* SSSwiftUIAnimationsApp.swift in Sources */,
+				B741D9A62C46448200ABFCB4 /* WaterProgressTextView.swift in Sources */,
+				B780A9242C3D7A7C00342512 /* WaterCircleOutlineView.swift in Sources */,
 				B1DFCA532BF4FC7900F01505 /* ArrowView.swift in Sources */,
+				B780A9182C3D063500342512 /* WaterProgressView.swift in Sources */,
 				B11B983A2BCE9C3F00D76016 /* CheckView.swift in Sources */,
+				B7ECD58D2C452D8100B6A703 /* BubbleView.swift in Sources */,
+				B780A9262C3D806300342512 /* ExampleWaterProgressView.swift in Sources */,
+				B780A91A2C3D0BCB00342512 /* WaterProgressViewStyle.swift in Sources */,
 				B1DFCA512BF4FA3D00F01505 /* ProgressCircle.swift in Sources */,
 				B14AB36C2BC41B05004B09C4 /* ProgressView.swift in Sources */,
 				B1FE861E2BFF6BC000FB111C /* ViewExtension.swift in Sources */,
