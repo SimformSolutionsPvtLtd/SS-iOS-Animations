@@ -28,6 +28,11 @@ SwiftUI animation library to bring your app to life. ✨
 
 [**Code Link**](SSSwiftUIAnimations/Sources/ArrowLeftRightAnimation)
 
+### Water Effect ProgressView 🌊
+![LRArrowView](SSSwiftUIAnimations/GIFs/WaterProgressView.gif)
+
+[**Code Link**](SSSwiftUIAnimations/Sources/WaterProgressAnimation)
+
 ## Found these animations useful? :heart:
 
 Support it by joining [stargazers] :star: for this repository.
