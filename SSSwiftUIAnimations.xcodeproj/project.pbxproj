@@ -33,6 +33,7 @@
 		B1EA09DE2C11A6B70024BC28 /* Banner.png in Resources */ = {isa = PBXBuildFile; fileRef = B1EA09DD2C11A6B70024BC28 /* Banner.png */; };
 		B1FE861E2BFF6BC000FB111C /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FE861D2BFF6BC000FB111C /* ViewExtension.swift */; };
 		B717EC9D2C45488100555F90 /* CheckmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B717EC9C2C45488100555F90 /* CheckmarkView.swift */; };
+		B741A1442C4A6D610083399B /* WaterProgressView.gif in Resources */ = {isa = PBXBuildFile; fileRef = B741A1432C4A6D610083399B /* WaterProgressView.gif */; };
 		B741D9A62C46448200ABFCB4 /* WaterProgressTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B741D9A52C46448200ABFCB4 /* WaterProgressTextView.swift */; };
 		B780A9182C3D063500342512 /* WaterProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B780A9172C3D063500342512 /* WaterProgressView.swift */; };
 		B780A91A2C3D0BCB00342512 /* WaterProgressViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B780A9192C3D0BCB00342512 /* WaterProgressViewStyle.swift */; };
@@ -70,6 +71,7 @@
 		B1EA09DD2C11A6B70024BC28 /* Banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Banner.png; sourceTree = "<group>"; };
 		B1FE861D2BFF6BC000FB111C /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		B717EC9C2C45488100555F90 /* CheckmarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckmarkView.swift; sourceTree = "<group>"; };
+		B741A1432C4A6D610083399B /* WaterProgressView.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = WaterProgressView.gif; sourceTree = "<group>"; };
 		B741D9A52C46448200ABFCB4 /* WaterProgressTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterProgressTextView.swift; sourceTree = "<group>"; };
 		B780A9172C3D063500342512 /* WaterProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterProgressView.swift; sourceTree = "<group>"; };
 		B780A9192C3D0BCB00342512 /* WaterProgressViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterProgressViewStyle.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				B1343F712C060680009ACE90 /* ProgressView.gif */,
+				B741A1432C4A6D610083399B /* WaterProgressView.gif */,
 				B1343F732C060686009ACE90 /* LRArrowView.gif */,
 			);
 			path = GIFs;
@@ -277,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BC2D8FA28CF3A7000CAB302 /* Preview Assets.xcassets in Resources */,
+				B741A1442C4A6D610083399B /* WaterProgressView.gif in Resources */,
 				B1343F722C060680009ACE90 /* ProgressView.gif in Resources */,
 				B1EA09DE2C11A6B70024BC28 /* Banner.png in Resources */,
 				2BC2D8F728CF3A7000CAB302 /* Assets.xcassets in Resources */,
