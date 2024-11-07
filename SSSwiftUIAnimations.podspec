@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'SSSwiftUIAnimations'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'With this library, you can make your app more fun and engaging by adding smooth and eye-catching animations to your app.'
   s.description      = <<-DESC
     SS-iOS-Animations: Turn ordinary user interfaces into extraordinary experiences! With this library, you can make your app more fun and engaging by adding smooth and eye-catching animations to your app. Whether you're new to SwiftUI or a pro, our easy-to-use animations make it simple to add that extra wow factor to your app. Spice up your app with cool transitions, fun effects, and interactive touches, all thanks to SS-iOS-Animations. Try it out and take your SwiftUI apps to the next level!
