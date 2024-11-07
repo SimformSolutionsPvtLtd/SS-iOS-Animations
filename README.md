@@ -33,6 +33,11 @@ SwiftUI animation library to bring your app to life. ✨
 
 [**Code Link**](https://github.com/SimformSolutionsPvtLtd/SS-iOS-Animations/tree/master/SSSwiftUIAnimations/Sources/WaterProgressAnimation)
 
+### Reaction Animation View 🌊
+![ReactionAnimationView](https://github.com/SimformSolutionsPvtLtd/SS-iOS-Animations/blob/master/SSSwiftUIAnimations/GIFs/ReactionAnimationView.gif?raw=true)
+
+[**Code Link**](https://github.com/SimformSolutionsPvtLtd/SS-iOS-Animations/tree/master/SSSwiftUIAnimations/Sources/ReactionAnimation) | Animation Name: ReactionAnimation
+
 ## Found these animations useful? :heart:
 
 Support it by joining [stargazers] :star: for this repository.
