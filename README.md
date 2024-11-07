@@ -1,4 +1,4 @@
-![Banner](SSSwiftUIAnimations/Banner/Banner.png)
+![Banner](https://github.com/SimformSolutionsPvtLtd/SS-iOS-Animations/blob/master/SSSwiftUIAnimations/Banner/Banner.png?raw=true)
 
 # SS-iOS-Animations
 
@@ -14,24 +14,24 @@ SwiftUI animation library to bring your app to life. ✨
     simple to add that extra wow factor to your app. Spice up your app with cool transitions, fun effects, and interactive touches, all thanks to
     **SS-iOS-Animations**. Try it out and take your SwiftUI apps to the next level! ✨
     
-   [Check out the Examples](SSSwiftUIAnimations/Examples)
+   [Check out the Examples](https://github.com/SimformSolutionsPvtLtd/SS-iOS-Animations/tree/master/SSSwiftUIAnimations/Examples)
 
 ## Animations
 
 ### ProgressView ⏳ 
-![ProgressView](SSSwiftUIAnimations/GIFs/ProgressView.gif)
+![ProgressView](https://github.com/SimformSolutionsPvtLtd/SS-iOS-Animations/blob/master/SSSwiftUIAnimations/GIFs/ProgressView.gif?raw=true)
 
-[**Code Link**](SSSwiftUIAnimations/Sources/ProgressAnimation)
+[**Code Link**](https://github.com/SimformSolutionsPvtLtd/SS-iOS-Animations/tree/master/SSSwiftUIAnimations/Sources/ProgressAnimation)
 
 ### Left Right ArrowView ↔
-![LRArrowView](SSSwiftUIAnimations/GIFs/LRArrowView.gif)
+![LRArrowView](https://github.com/SimformSolutionsPvtLtd/SS-iOS-Animations/blob/master/SSSwiftUIAnimations/GIFs/LRArrowView.gif?raw=true)
 
-[**Code Link**](SSSwiftUIAnimations/Sources/ArrowLeftRightAnimation)
+[**Code Link**](https://github.com/SimformSolutionsPvtLtd/SS-iOS-Animations/tree/master/SSSwiftUIAnimations/Sources/ArrowLeftRightAnimation)
 
 ### Water Effect ProgressView 🌊
-![LRArrowView](SSSwiftUIAnimations/GIFs/WaterProgressView.gif)
+![WaterEffectProgressView](https://github.com/SimformSolutionsPvtLtd/SS-iOS-Animations/blob/master/SSSwiftUIAnimations/GIFs/WaterProgressView.gif?raw=true)
 
-[**Code Link**](SSSwiftUIAnimations/Sources/WaterProgressAnimation)
+[**Code Link**](https://github.com/SimformSolutionsPvtLtd/SS-iOS-Animations/tree/master/SSSwiftUIAnimations/Sources/WaterProgressAnimation)
 
 ## Found these animations useful? :heart:
 
@@ -59,10 +59,10 @@ Distributed under the MIT license. See [LICENSE] for details.
 
 [stargazers]:               https://github.com/SimformSolutionsPvtLtd/SS-iOS-Animations/stargazers
 
-[Contributing Guide]:       CONTRIBUTING.md
+[Contributing Guide]:       https://github.com/SimformSolutionsPvtLtd/SS-iOS-Animations/blob/master/CONTRIBUTING.md
 
 [Awesome-Mobile-Libraries]: https://github.com/SimformSolutionsPvtLtd/Awesome-Mobile-Libraries
 
 [Github Issues]:            https://github.com/SimformSolutionsPvtLtd/SS-iOS-Animations/issues
 
-[license]:                  LICENSE
+[license]:                  https://github.com/SimformSolutionsPvtLtd/SS-iOS-Animations/blob/master/LICENSE
