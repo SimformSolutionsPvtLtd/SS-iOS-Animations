@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SSProgressViewStyle {
+public struct SSProgressViewStyle {
     var circleSize: CGFloat
     var circleStrokeWidth: CGFloat
     var arrowStrokeWidth: CGFloat

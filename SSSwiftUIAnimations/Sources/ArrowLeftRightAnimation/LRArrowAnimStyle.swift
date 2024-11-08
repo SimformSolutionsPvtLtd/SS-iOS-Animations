@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LRArrowAnimStyle {
+public struct LRArrowAnimStyle {
     
     // MARK: - Variables
     
