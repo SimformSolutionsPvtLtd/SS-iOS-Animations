@@ -14,6 +14,11 @@
 		4636F36E291E1BD600C8DB5B /* LeftArrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4636F36D291E1BD600C8DB5B /* LeftArrow.swift */; };
 		469963A5290FCE3600DC01AD /* SSLRArrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469963A4290FCE3600DC01AD /* SSLRArrowView.swift */; };
 		8FE1727C2CAA8BF100F8AB45 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE1727A2CAA8BF100F8AB45 /* ViewExtension.swift */; };
+		902200F62CDCC87E001DCC3A /* ReactionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902200F52CDCC87E001DCC3A /* ReactionAnimationView.swift */; };
+		902200F82CDCC951001DCC3A /* ReactionAnimationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902200F72CDCC951001DCC3A /* ReactionAnimationViewModel.swift */; };
+		902200FA2CDCCF23001DCC3A /* ExampleReactionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902200F92CDCCF1C001DCC3A /* ExampleReactionAnimationView.swift */; };
+		902201062CDE116E001DCC3A /* ReactionAnimationViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902201052CDE1166001DCC3A /* ReactionAnimationViewStyle.swift */; };
+		902201082CDE2293001DCC3A /* ReactionAnimationView.gif in Resources */ = {isa = PBXBuildFile; fileRef = 902201072CDE2293001DCC3A /* ReactionAnimationView.gif */; };
 		B10677FE2BE8D0D400957B4E /* DownArrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10677FD2BE8D0D400957B4E /* DownArrow.swift */; };
 		B1098E7D2BD94ED900BC19DD /* WaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1098E7C2BD94ED900BC19DD /* WaveView.swift */; };
 		B11B983A2BCE9C3F00D76016 /* CheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11B98392BCE9C3F00D76016 /* CheckView.swift */; };
@@ -52,6 +57,11 @@
 		4636F36D291E1BD600C8DB5B /* LeftArrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftArrow.swift; sourceTree = "<group>"; };
 		469963A4290FCE3600DC01AD /* SSLRArrowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSLRArrowView.swift; sourceTree = "<group>"; };
 		8FE1727A2CAA8BF100F8AB45 /* ViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		902200F52CDCC87E001DCC3A /* ReactionAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactionAnimationView.swift; sourceTree = "<group>"; };
+		902200F72CDCC951001DCC3A /* ReactionAnimationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactionAnimationViewModel.swift; sourceTree = "<group>"; };
+		902200F92CDCCF1C001DCC3A /* ExampleReactionAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleReactionAnimationView.swift; sourceTree = "<group>"; };
+		902201052CDE1166001DCC3A /* ReactionAnimationViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactionAnimationViewStyle.swift; sourceTree = "<group>"; };
+		902201072CDE2293001DCC3A /* ReactionAnimationView.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ReactionAnimationView.gif; sourceTree = "<group>"; };
 		B10677FD2BE8D0D400957B4E /* DownArrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownArrow.swift; sourceTree = "<group>"; };
 		B1098E7C2BD94ED900BC19DD /* WaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveView.swift; sourceTree = "<group>"; };
 		B11B98392BCE9C3F00D76016 /* CheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckView.swift; sourceTree = "<group>"; };
@@ -151,9 +161,20 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		902200F42CDCC860001DCC3A /* ReactionAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				902201052CDE1166001DCC3A /* ReactionAnimationViewStyle.swift */,
+				902200F52CDCC87E001DCC3A /* ReactionAnimationView.swift */,
+				902200F72CDCC951001DCC3A /* ReactionAnimationViewModel.swift */,
+			);
+			path = ReactionAnimation;
+			sourceTree = "<group>";
+		};
 		B1343F702C06064B009ACE90 /* GIFs */ = {
 			isa = PBXGroup;
 			children = (
+				902201072CDE2293001DCC3A /* ReactionAnimationView.gif */,
 				B1343F712C060680009ACE90 /* ProgressView.gif */,
 				B741A1432C4A6D610083399B /* WaterProgressView.gif */,
 				B1343F732C060686009ACE90 /* LRArrowView.gif */,
@@ -178,6 +199,7 @@
 		B153FD112BFB64BE00AEFE83 /* Examples */ = {
 			isa = PBXGroup;
 			children = (
+				902200F92CDCCF1C001DCC3A /* ExampleReactionAnimationView.swift */,
 				B19E0B652BF7498700E65974 /* ExampleProgressView.swift */,
 				B153FD142BFB7A7900AEFE83 /* ExampleLRArrowView.swift */,
 				B780A9252C3D806300342512 /* ExampleWaterProgressView.swift */,
@@ -189,6 +211,7 @@
 		B1DE99D72C060E1A006995FB /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				902200F42CDCC860001DCC3A /* ReactionAnimation */,
 				8FE1727B2CAA8BF100F8AB45 /* Utils */,
 				B780A9162C3D05CD00342512 /* WaterProgressAnimation */,
 				B14AB36A2BC40286004B09C4 /* ProgressAnimation */,
@@ -293,6 +316,7 @@
 				B1EA09DE2C11A6B70024BC28 /* Banner.png in Resources */,
 				2BC2D8F728CF3A7000CAB302 /* Assets.xcassets in Resources */,
 				B1343F742C060686009ACE90 /* LRArrowView.gif in Resources */,
+				902201082CDE2293001DCC3A /* ReactionAnimationView.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +337,7 @@
 				B18792612AA5A0D2006F2CC9 /* CircularView.swift in Sources */,
 				B153FD152BFB7A7900AEFE83 /* ExampleLRArrowView.swift in Sources */,
 				2BC2D8F528CF3A6F00CAB302 /* ContentView.swift in Sources */,
+				902200F62CDCC87E001DCC3A /* ReactionAnimationView.swift in Sources */,
 				4636F36E291E1BD600C8DB5B /* LeftArrow.swift in Sources */,
 				B15FD7992C04785700752CEA /* CustomToolBar.swift in Sources */,
 				469963A5290FCE3600DC01AD /* SSLRArrowView.swift in Sources */,
@@ -322,14 +347,17 @@
 				B153FD132BFB71F500AEFE83 /* FilledStrokeCircle.swift in Sources */,
 				2BC2D8F328CF3A6F00CAB302 /* SSSwiftUIAnimationsApp.swift in Sources */,
 				B741D9A62C46448200ABFCB4 /* WaterProgressTextView.swift in Sources */,
+				902201062CDE116E001DCC3A /* ReactionAnimationViewStyle.swift in Sources */,
 				B780A9242C3D7A7C00342512 /* WaterCircleOutlineView.swift in Sources */,
 				B1DFCA532BF4FC7900F01505 /* ArrowView.swift in Sources */,
 				B780A9182C3D063500342512 /* WaterProgressView.swift in Sources */,
 				B11B983A2BCE9C3F00D76016 /* CheckView.swift in Sources */,
+				902200F82CDCC951001DCC3A /* ReactionAnimationViewModel.swift in Sources */,
 				B7ECD58D2C452D8100B6A703 /* BubbleView.swift in Sources */,
 				8FE1727C2CAA8BF100F8AB45 /* ViewExtension.swift in Sources */,
 				B780A9262C3D806300342512 /* ExampleWaterProgressView.swift in Sources */,
 				B780A91A2C3D0BCB00342512 /* WaterProgressViewStyle.swift in Sources */,
+				902200FA2CDCCF23001DCC3A /* ExampleReactionAnimationView.swift in Sources */,
 				B1DFCA512BF4FA3D00F01505 /* ProgressCircle.swift in Sources */,
 				B14AB36C2BC41B05004B09C4 /* ProgressView.swift in Sources */,
 			);
