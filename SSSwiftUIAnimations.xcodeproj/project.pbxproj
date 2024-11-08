@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		223F502E2C2E95F3006C68CE /* CircularLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223F502D2C2E95F3006C68CE /* CircularLoading.swift */; };
+		223F50342C2E9636006C68CE /* LinearLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223F502F2C2E9636006C68CE /* LinearLoading.swift */; };
+		223F50352C2E9636006C68CE /* LinearProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223F50302C2E9636006C68CE /* LinearProgress.swift */; };
+		223F50362C2E9636006C68CE /* CircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223F50312C2E9636006C68CE /* CircularProgress.swift */; };
+		223F50372C2E9636006C68CE /* CircularReverseProgreessBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223F50322C2E9636006C68CE /* CircularReverseProgreessBar.swift */; };
+		223F50382C2E9636006C68CE /* Stick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223F50332C2E9636006C68CE /* Stick.swift */; };
+		223F503A2C2E991B006C68CE /* StickAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223F50392C2E991B006C68CE /* StickAnimations.swift */; };
+		223F503C2C2EACCD006C68CE /* StickAnimationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223F503B2C2EACCD006C68CE /* StickAnimationType.swift */; };
+		22BFB9042CCBBCF3007D3AC2 /* ExampleSticksAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BFB9032CCBBCF3007D3AC2 /* ExampleSticksAnimations.swift */; };
 		2BC2D8F328CF3A6F00CAB302 /* SSSwiftUIAnimationsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC2D8F228CF3A6F00CAB302 /* SSSwiftUIAnimationsApp.swift */; };
 		2BC2D8F528CF3A6F00CAB302 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC2D8F428CF3A6F00CAB302 /* ContentView.swift */; };
 		2BC2D8F728CF3A7000CAB302 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BC2D8F628CF3A7000CAB302 /* Assets.xcassets */; };
@@ -44,6 +53,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		223F502D2C2E95F3006C68CE /* CircularLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularLoading.swift; sourceTree = "<group>"; };
+		223F502F2C2E9636006C68CE /* LinearLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinearLoading.swift; sourceTree = "<group>"; };
+		223F50302C2E9636006C68CE /* LinearProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinearProgress.swift; sourceTree = "<group>"; };
+		223F50312C2E9636006C68CE /* CircularProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularProgress.swift; sourceTree = "<group>"; };
+		223F50322C2E9636006C68CE /* CircularReverseProgreessBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularReverseProgreessBar.swift; sourceTree = "<group>"; };
+		223F50332C2E9636006C68CE /* Stick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stick.swift; sourceTree = "<group>"; };
+		223F50392C2E991B006C68CE /* StickAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickAnimations.swift; sourceTree = "<group>"; };
+		223F503B2C2EACCD006C68CE /* StickAnimationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickAnimationType.swift; sourceTree = "<group>"; };
+		22BFB9032CCBBCF3007D3AC2 /* ExampleSticksAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleSticksAnimations.swift; sourceTree = "<group>"; };
 		2BC2D8EF28CF3A6F00CAB302 /* SSSwiftUIAnimations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSSwiftUIAnimations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BC2D8F228CF3A6F00CAB302 /* SSSwiftUIAnimationsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSSwiftUIAnimationsApp.swift; sourceTree = "<group>"; };
 		2BC2D8F428CF3A6F00CAB302 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -92,6 +110,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		223F502C2C2E95D6006C68CE /* SticksAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				223F502D2C2E95F3006C68CE /* CircularLoading.swift */,
+				223F50312C2E9636006C68CE /* CircularProgress.swift */,
+				223F50322C2E9636006C68CE /* CircularReverseProgreessBar.swift */,
+				223F502F2C2E9636006C68CE /* LinearLoading.swift */,
+				223F50302C2E9636006C68CE /* LinearProgress.swift */,
+				223F50332C2E9636006C68CE /* Stick.swift */,
+				223F50392C2E991B006C68CE /* StickAnimations.swift */,
+				223F503B2C2EACCD006C68CE /* StickAnimationType.swift */,
+			);
+			path = SticksAnimations;
+			sourceTree = "<group>";
+		};
 		2BC2D8E628CF3A6F00CAB302 = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +214,7 @@
 				B19E0B652BF7498700E65974 /* ExampleProgressView.swift */,
 				B153FD142BFB7A7900AEFE83 /* ExampleLRArrowView.swift */,
 				B780A9252C3D806300342512 /* ExampleWaterProgressView.swift */,
+				22BFB9032CCBBCF3007D3AC2 /* ExampleSticksAnimations.swift */,
 				B1F9ED332BFCD85000189871 /* ExamplesList */,
 			);
 			path = Examples;
@@ -191,6 +225,7 @@
 			children = (
 				8FE1727B2CAA8BF100F8AB45 /* Utils */,
 				B780A9162C3D05CD00342512 /* WaterProgressAnimation */,
+				223F502C2C2E95D6006C68CE /* SticksAnimations */,
 				B14AB36A2BC40286004B09C4 /* ProgressAnimation */,
 				469963A3290FCE1900DC01AD /* ArrowLeftRightAnimation */,
 			);
@@ -309,6 +344,9 @@
 				B177713F2BF39A60001723EC /* ModelClass.swift in Sources */,
 				B10677FE2BE8D0D400957B4E /* DownArrow.swift in Sources */,
 				B1098E7D2BD94ED900BC19DD /* WaveView.swift in Sources */,
+				223F50372C2E9636006C68CE /* CircularReverseProgreessBar.swift in Sources */,
+				223F503C2C2EACCD006C68CE /* StickAnimationType.swift in Sources */,
+				22BFB9042CCBBCF3007D3AC2 /* ExampleSticksAnimations.swift in Sources */,
 				B19E0B662BF7498700E65974 /* ExampleProgressView.swift in Sources */,
 				B18792612AA5A0D2006F2CC9 /* CircularView.swift in Sources */,
 				B153FD152BFB7A7900AEFE83 /* ExampleLRArrowView.swift in Sources */,
@@ -320,17 +358,23 @@
 				B717EC9D2C45488100555F90 /* CheckmarkView.swift in Sources */,
 				B780A9282C3D851700342512 /* WaterCircleView.swift in Sources */,
 				B153FD132BFB71F500AEFE83 /* FilledStrokeCircle.swift in Sources */,
+				223F50362C2E9636006C68CE /* CircularProgress.swift in Sources */,
+				223F50352C2E9636006C68CE /* LinearProgress.swift in Sources */,
+				223F502E2C2E95F3006C68CE /* CircularLoading.swift in Sources */,
 				2BC2D8F328CF3A6F00CAB302 /* SSSwiftUIAnimationsApp.swift in Sources */,
 				B741D9A62C46448200ABFCB4 /* WaterProgressTextView.swift in Sources */,
 				B780A9242C3D7A7C00342512 /* WaterCircleOutlineView.swift in Sources */,
 				B1DFCA532BF4FC7900F01505 /* ArrowView.swift in Sources */,
 				B780A9182C3D063500342512 /* WaterProgressView.swift in Sources */,
+				223F50382C2E9636006C68CE /* Stick.swift in Sources */,
+				223F50342C2E9636006C68CE /* LinearLoading.swift in Sources */,
 				B11B983A2BCE9C3F00D76016 /* CheckView.swift in Sources */,
 				B7ECD58D2C452D8100B6A703 /* BubbleView.swift in Sources */,
 				8FE1727C2CAA8BF100F8AB45 /* ViewExtension.swift in Sources */,
 				B780A9262C3D806300342512 /* ExampleWaterProgressView.swift in Sources */,
 				B780A91A2C3D0BCB00342512 /* WaterProgressViewStyle.swift in Sources */,
 				B1DFCA512BF4FA3D00F01505 /* ProgressCircle.swift in Sources */,
+				223F503A2C2E991B006C68CE /* StickAnimations.swift in Sources */,
 				B14AB36C2BC41B05004B09C4 /* ProgressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
