@@ -21,17 +21,38 @@ SwiftUI animation library to bring your app to life. ✨
 ### ProgressView ⏳ 
 ![ProgressView](https://github.com/SimformSolutionsPvtLtd/SS-iOS-Animations/blob/master/SSSwiftUIAnimations/GIFs/ProgressView.gif?raw=true)
 
-[**Code Link**](https://github.com/SimformSolutionsPvtLtd/SS-iOS-Animations/tree/master/SSSwiftUIAnimations/Sources/ProgressAnimation)
+[**Code Link**](https://github.com/SimformSolutionsPvtLtd/SS-iOS-Animations/tree/master/SSSwiftUIAnimations/Sources/ProgressAnimation) | Animation Name: ProgressAnimation
 
 ### Left Right ArrowView ↔
 ![LRArrowView](https://github.com/SimformSolutionsPvtLtd/SS-iOS-Animations/blob/master/SSSwiftUIAnimations/GIFs/LRArrowView.gif?raw=true)
 
-[**Code Link**](https://github.com/SimformSolutionsPvtLtd/SS-iOS-Animations/tree/master/SSSwiftUIAnimations/Sources/ArrowLeftRightAnimation)
+[**Code Link**](https://github.com/SimformSolutionsPvtLtd/SS-iOS-Animations/tree/master/SSSwiftUIAnimations/Sources/ArrowLeftRightAnimation) | Animation Name: ArrowLeftRightAnimation
 
 ### Water Effect ProgressView 🌊
 ![WaterEffectProgressView](https://github.com/SimformSolutionsPvtLtd/SS-iOS-Animations/blob/master/SSSwiftUIAnimations/GIFs/WaterProgressView.gif?raw=true)
 
-[**Code Link**](https://github.com/SimformSolutionsPvtLtd/SS-iOS-Animations/tree/master/SSSwiftUIAnimations/Sources/WaterProgressAnimation)
+[**Code Link**](https://github.com/SimformSolutionsPvtLtd/SS-iOS-Animations/tree/master/SSSwiftUIAnimations/Sources/WaterProgressAnimation) | Animation Name: WaterProgressAnimation
+
+## Installation
+**CocoaPods**
+ 
+- You can use CocoaPods to install SSSwiftUIAnimations by adding it to your Podfile. It will add all the Animation to your project:
+
+       use_frameworks!
+       pod 'SSSwiftUIAnimations'
+
+- For installing only particular Animation from the Pod. Use /AnimationName at the end. You can find the AnimationName at the bottom of Animations listed above.<br/> **Example: pod 'SSSwiftUIAnimations/WaterProgressAnimation'**
+  
+       pod 'SSSwiftUIAnimations/[AnimationName]'
+
+- Then, wherever you want to use it, Just:
+
+       import SwiftUI
+       import SSSwiftUIAnimations
+       
+**Manually**
+-   Download and drop **SSSwiftUIAnimations** folder in your project.
+-   Congratulations!
 
 ## Found these animations useful? :heart:
 
