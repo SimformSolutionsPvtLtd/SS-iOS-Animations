@@ -50,6 +50,10 @@ SwiftUI animation library to bring your app to life. ✨
        import SwiftUI
        import SSSwiftUIAnimations
        
+**Swift Package Manager**
+
+- When using Xcode 11 or later, you can install `SSSwiftUIAnimations` through [Swift Package Manager](https://swift.org/package-manager/) by going to your Project settings > `Swift Packages` and add the repository by providing the GitHub URL. Alternatively, you can go to `File` > `Swift Packages` > `Add Package Dependencies...`
+       
 **Manually**
 -   Download and drop **SSSwiftUIAnimations** folder in your project.
 -   Congratulations!
