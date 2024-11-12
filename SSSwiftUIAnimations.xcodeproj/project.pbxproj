@@ -51,6 +51,7 @@
 		2BC2D8F928CF3A7000CAB302 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4636F36D291E1BD600C8DB5B /* LeftArrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftArrow.swift; sourceTree = "<group>"; };
 		469963A4290FCE3600DC01AD /* SSLRArrowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSLRArrowView.swift; sourceTree = "<group>"; };
+		8F9765232CE20D5000034CF7 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		8FE1727A2CAA8BF100F8AB45 /* ViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		B10677FD2BE8D0D400957B4E /* DownArrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownArrow.swift; sourceTree = "<group>"; };
 		B1098E7C2BD94ED900BC19DD /* WaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveView.swift; sourceTree = "<group>"; };
@@ -95,6 +96,7 @@
 		2BC2D8E628CF3A6F00CAB302 = {
 			isa = PBXGroup;
 			children = (
+				8F9765232CE20D5000034CF7 /* Package.swift */,
 				2BC2D8F128CF3A6F00CAB302 /* SSSwiftUIAnimations */,
 				2BC2D8F028CF3A6F00CAB302 /* Products */,
 			);
