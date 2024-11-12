@@ -21,5 +21,10 @@ class ExampleListModel: Identifiable {
     }
     
     // data for example row list
-    static let exampleList = [ExampleListModel(rowTitle: "ProgressView", destinationView: AnyView(ExampleProgressView())), ExampleListModel(rowTitle: "Arrow Left Right View", destinationView: AnyView(ExampleLRArrowView())), ExampleListModel(rowTitle: "Water Progress View", destinationView: AnyView(ExampleWaterProgressView()))]
+    static let exampleList = [
+        ExampleListModel(rowTitle: "ProgressView", destinationView: AnyView(ExampleProgressView())),
+        ExampleListModel(rowTitle: "Arrow Left Right View", destinationView: AnyView(ExampleLRArrowView())),
+        ExampleListModel(rowTitle: "Water Progress View", destinationView: AnyView(ExampleWaterProgressView())),
+        ExampleListModel(rowTitle: "ReactionAnimaionView", destinationView: AnyView(ExampleReactionAnimationView()))
+    ]
 }
