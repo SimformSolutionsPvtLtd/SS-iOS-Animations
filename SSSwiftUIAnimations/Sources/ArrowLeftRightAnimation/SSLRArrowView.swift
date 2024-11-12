@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SSLRArrowView: View {
+public struct SSLRArrowView: View {
     
     // MARK: - Variables
     
@@ -24,7 +24,7 @@ struct SSLRArrowView: View {
     var rightArrowViewTap: (() -> Void)?
     
     // MARK: - Body view
-    var body: some View {
+    public var body: some View {
         HStack(spacing: 20 + arrowViewAnimStyle.circleStrokeSize) {
             
             // Left arrow view

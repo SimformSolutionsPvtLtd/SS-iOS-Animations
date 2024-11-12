@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SSProgressView: View {
+public struct SSProgressView: View {
     
     // MARK: - Variables
     
@@ -54,7 +54,7 @@ struct SSProgressView: View {
     
     @State var bounceEffect: CGFloat = 1.0
     
-    var body: some View {
+    public var body: some View {
         ZStack {
             // Progress Circle with animation
             ProgressCircle(progress: $progress, style: style)
